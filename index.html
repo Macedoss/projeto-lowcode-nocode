@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cadastre-se e receba alertas de promoções exclusivas de monitores e outros produtos de tecnologia." />
+  <title>PromoAlerta – Receba ofertas exclusivas</title>
+  <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ──────────────────────────────────── -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">🔔</span>
+        <span class="logo-text">PromoAlerta</span>
+      </div>
+      <p class="tagline">Seja o primeiro a saber das melhores ofertas</p>
+    </div>
+  </header>
+
+  <!-- ── HERO ────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container">
+      <h1>Cadastre-se e receba<br><span class="highlight">promoções exclusivas</span></h1>
+      <p>Escolha os produtos de interesse e receba alertas de preço diretamente no seu e-mail.</p>
+    </div>
+  </section>
+
+  <!-- ── FORMULÁRIO ──────────────────────────────── -->
+  <main class="main">
+    <div class="container">
+
+      <!-- Formulário de cadastro -->
+      <div class="form-card" id="formCard">
+        <div class="form-header">
+          <h2>Criar meu cadastro</h2>
+          <p>Preencha seus dados e escolha quais promoções deseja receber.</p>
+        </div>
+
+        <form id="registrationForm" novalidate>
+
+          <!-- Dados pessoais -->
+          <div class="form-section">
+            <h3 class="section-title">
+              <span class="section-icon">👤</span> Dados Pessoais
+            </h3>
+
+            <div class="form-group">
+              <label for="name">Nome completo <span aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Seu nome completo"
+                autocomplete="name"
+                required
+              />
+              <span class="error-msg" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail <span aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                autocomplete="email"
+                required
+              />
+              <span class="error-msg" id="emailError" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Produtos de interesse (gerado dinamicamente pelo app.js) -->
+          <div class="form-section">
+            <h3 class="section-title">
+              <span class="section-icon">🛍️</span> Produtos de Interesse
+            </h3>
+            <p class="section-desc">
+              Selecione os produtos e as faixas de preço que deseja acompanhar.
+            </p>
+            <div id="productsContainer"></div>
+            <span class="error-msg" id="productsError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-text">Quero receber promoções</span>
+            <span class="btn-icon" aria-hidden="true">→</span>
+          </button>
+
+        </form>
+      </div>
+
+      <!-- Tela de sucesso (oculta inicialmente) -->
+      <div class="success-card" id="successCard" hidden>
+        <div class="success-icon" aria-hidden="true">✅</div>
+        <h2>Cadastro realizado com sucesso!</h2>
+        <p id="successMessage"></p>
+        <div class="success-summary" id="successSummary" aria-label="Resumo das preferências"></div>
+        <button class="btn-secondary" id="newRegistration" type="button">
+          Fazer novo cadastro
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── FOOTER ──────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 PromoAlerta &nbsp;·&nbsp; Projeto Low Code/No Code &nbsp;·&nbsp; Módulo 3</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/js/config.js"></script>
+  <script src="src/js/app.js"></script>
+
+</body>
+</html>
