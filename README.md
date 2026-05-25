@@ -8,18 +8,15 @@
 ## 📋 Sobre o Projeto
 
 O **PromoAlerta** permite que usuários se cadastrem para receber notificações de promoções de produtos de tecnologia, filtrando por categoria e faixa de preço. Atualmente disponível para **monitores**, com arquitetura preparada para expansão.
-
-**Demonstração:** [Gemini Share – Solução](https://gemini.google.com/share/7431f516fd98)
+[
+**Demonstração:** https://gemini.google.com/share/7c7c3e94ae95
 
 ---
 
 ## 🚀 Como Executar
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/VHugo09/projeto-lowcode-nocode.git
-   ```
-2. Abra o arquivo `index.html` diretamente no navegador — **não é necessário servidor**.
+1. Abra a demonstração!
+  
 
 ---
 
@@ -98,7 +95,6 @@ notebooks: {
 - [ ] Adicionar Notebooks, Teclados, Headsets
 - [ ] Painel administrativo
 - [ ] Autenticação de usuários
-- [ ] Banco de dados (Google Sheets / Firebase / Supabase)
 - [ ] Integração com IA para recomendação de produtos
 
 ---
@@ -107,18 +103,15 @@ notebooks: {
 
 | Responsabilidade   | Descrição                                       |
 |--------------------|-------------------------------------------------|
-| Modelagem do fluxo | Definição das automações e regras               |
-| Design             | Criação das interfaces                          |
-| Integração         | Conexão com APIs e serviços externos            |
-| Documentação       | Organização do repositório e relatório          |
-| Apresentação       | Preparação dos materiais finais                 |
+| Caio Macedo | Interação com Ia              |
+| Kayla           | Organização dos arquivos                        |
 
 ---
 
 ## 📅 Registro da Aula
 
-- **Data:** 18/05/2026  
-- **Atividade:** Discussão crítica + mini-projeto de aplicação  
+- **Data:** 25/05/2026  
+- **Atividade:** Discussão crítica + Projeto de cadastro  
 - **Professora:** Kadidja Valéria  
 
 ---
